@@ -7,17 +7,17 @@
     v-model="activeItem"
     color="primary"
   >
-    <v-btn value="top">
+    <v-btn value="top" :to="{ path: '/'}">
       <span>Top Stories</span>
       <v-icon>thumb_up</v-icon>
     </v-btn>
 
-    <v-btn value="code">
+    <v-btn value="code" :to="{ name: 'code-examples'}">
       <span>Code Examples</span>
       <v-icon>code</v-icon>
     </v-btn>
 
-    <v-btn value="favorites">
+    <v-btn value="favorites" :to="{ name: 'my-favorites'}">
       <span>Favorites</span>
       <v-icon>favorite</v-icon>
     </v-btn>

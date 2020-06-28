@@ -3,6 +3,10 @@
 
     <TopToolbar></TopToolbar>
 
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+
     <BottomNav></BottomNav>
 
   </v-app>

@@ -44,13 +44,16 @@
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
+  import { Getter } from 'vuex-class';
+
   @Component
   export default class TopToolbar extends Vue {
+    @Getter("title", { namespace: 'topToolbar' }) title!: string;
     showMenu = false;
     toggleMenu(): void {
       this.showMenu = !this.showMenu;
     }
-    /* doNothing() {
+    /* doNothing(): void {
     } */
   }
 </script>
